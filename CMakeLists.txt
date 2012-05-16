@@ -4,9 +4,10 @@
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(getopt NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( getopt NONE )
+cmake_minimum_required ( VERSION 2.6 )
+include ( cmake/dist.cmake )
+include ( lua )
 
 # Install all files and documentation
-INSTALL (FILES getopt.lua DESTINATION ${INSTALL_LMOD})
+install_lua_module (getopt getopt.lua )
