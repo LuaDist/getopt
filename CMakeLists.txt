@@ -10,4 +10,4 @@ include ( cmake/dist.cmake )
 include ( lua )
 
 # Install all files and documentation
-install_lua_module (getopt getopt.lua )
+install_lua_module ( getopt getopt.lua )
